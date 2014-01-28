@@ -81,7 +81,7 @@ State.prototype = {
         var currentIndex, previousState;
         currentIndex = this.states.indexOf(this.current);
         previousState = this.current;
-        // only advance if it is not the first state yet.
+        // only backward if it is not the first state yet.
         if (currentIndex !== 0) {
             this.current = this.states[currentIndex - 1];
             this.eventTrigger(previousState, currentData, previousData);
