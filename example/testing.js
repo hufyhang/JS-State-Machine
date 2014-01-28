@@ -4,8 +4,10 @@ var State = require('node-state');
 
 var state = new State({
     initState: 'ready',
-    states: ['ready', 'middle', 'done']
+    states: ['ready']
 });
+
+state.addStates(['middle', 'done']);
 
 state.on('ready', 'enter', function () {
     'use strict';

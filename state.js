@@ -20,7 +20,7 @@ State.prototype = {
                 elementIndex = this.states.indexOf(args[index]);
                 // only add those not in state list yet.
                 if (elementIndex === -1) {
-                    this.states.pop(args[index]);
+                    this.states.push(args[index]);
                 }
             }
         }
