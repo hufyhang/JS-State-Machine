@@ -1,0 +1,24 @@
+{
+  "name": "State",
+  "version": "0.1.0",
+  "author": "Feifei Hang <l.daniel.hung@gmail.com>",
+  "description": "A Node.JS Finite State Machine",
+  "contributors": [
+    {
+      "name": "Feifei Hang",
+      "email": "l.daniel.hung@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hufyhang/JS-State-Machine.git"
+  },
+  "keywords": [
+    "state machine",
+    "utility"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
