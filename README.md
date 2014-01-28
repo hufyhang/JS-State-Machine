@@ -13,7 +13,7 @@ Include State by:
 APIs
 ====
 
-1. Constructor
+* Constructor
 
         var st = new State({initState: 'ready', states: ['ready', 'middle', 'end']});
 
@@ -21,19 +21,19 @@ APIs
 
 *states*: The availale states of the state machine.
 
-2. `addStates`
+* `addStates`
 
 Add additional states to state machine.
 
         st.addStates(['initialzed', 'pending']);
 
-3. `removeStates`
+* `removeStates`
 
 Remove states from state machine.
 
         st.removeStates(['middle', 'pending']);
 
-4. `forth`([currentStateData], [previousStateData])
+* `forth`([currentStateData], [previousStateData])
 
 Advance state.
 
@@ -43,7 +43,7 @@ Advance state.
 
 *previousStateData*: **[Optional]** the data provided for the previous state *leave* callback.
 
-5. back([currentStateData], [previousStateData])
+* back([currentStateData], [previousStateData])
 
 Backward state.
 
@@ -53,7 +53,7 @@ Backward state.
 
 *previousStateData*: **[Optional]** the data provided for the previous state *leave* callback.
 
-6. `go`(state, [currentStateData], [previousStateData])
+* `go`(state, [currentStateData], [previousStateData])
 
 Go to a state.
 
@@ -63,7 +63,7 @@ Go to a state.
 
 *previousStateData*: **[Optional]** the data provided for the previous state *leave* callback.
 
-7. on(state, event, callback)
+* on(state, event, callback)
 
 Bind a function that will be triggered when state changed.
 
