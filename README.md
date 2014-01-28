@@ -8,7 +8,7 @@ Usage
 
 Include State by:
 
-       var State = require('state');
+       var State = require('node-state');
 
 APIs
 ====

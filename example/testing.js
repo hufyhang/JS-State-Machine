@@ -1,6 +1,6 @@
 #!/usr/local/bin/node
 
-var State = require('../state');
+var State = require('node-state');
 
 var state = new State({
     initState: 'ready',

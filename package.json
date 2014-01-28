@@ -1,24 +1,29 @@
 {
-  "name": "State",
+  "name": "node-state",
   "version": "0.1.0",
-  "author": "Feifei Hang <l.daniel.hung@gmail.com>",
-  "description": "A Node.JS Finite State Machine",
-  "contributors": [
-    {
-      "name": "Feifei Hang",
-      "email": "l.daniel.hung@gmail.com"
-    }
-  ],
+  "description": "A Node.JS finite state machine utility.",
+  "main": "state.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/hufyhang/JS-State-Machine.git"
   },
   "keywords": [
-    "state machine",
+    "state",
+    "machine",
+    "finite",
+    "state",
+    "machine",
     "utility"
   ],
+  "author": "Feifei Hang <l.daniel.hung@gmail.com> (http://feifeihang.github.io/)",
   "license": "MIT",
-  "engines": {
-    "node": ">=0.6"
+  "bugs": {
+    "url": "https://github.com/hufyhang/JS-State-Machine/issues"
   }
 }
