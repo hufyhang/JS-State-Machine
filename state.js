@@ -44,7 +44,8 @@ State.prototype = {
         'use strict';
         // first, check number of arguments
         if (arguments.length === 3) {
-            if (state !== undefined && event !== undefined && callback !== undefined) {
+            if (state !== undefined && event !== undefined &&
+                callback !== undefined) {
                 if (this.events[state] === undefined) {
                     this.events[state] = {};
                 }
@@ -55,13 +56,20 @@ State.prototype = {
     },
     eventTrigger: function (previousState, currentData, previousData) {
         'use strict';
-        // trigger previous leave event first
-        if (this.events[previousState].leave !== undefined) {
-            this.events[previousState].leave(previousData);
+        // first check if has previous events
+        if (this.events[previousState]) {
+            // trigger previous leave event first
+            if (this.events[previousState].leave !== undefined) {
+                this.events[previousState].leave(previousData);
+            }
         }
-        // trigger current enter event
-        if (this.events[this.current].enter !== undefined) {
-            this.events[this.current].enter(currentData);
+
+        // then check if has current event
+        if (this.events[this.current]) {
+            // trigger current enter event
+            if (this.events[this.current].enter !== undefined) {
+                this.events[this.current].enter(currentData);
+            }
         }
     },
     forth: function (currentData, previousData) {
