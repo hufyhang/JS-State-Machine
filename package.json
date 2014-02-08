@@ -1,7 +1,7 @@
 {
   "name": "node-state",
   "version": "0.1.0",
-  "description": "A Node.JS finite state machine utility.",
+  "description": "A Node.js Finate State Machine",
   "main": "state.js",
   "directories": {
     "example": "example"
@@ -14,12 +14,12 @@
     "url": "https://github.com/hufyhang/JS-State-Machine.git"
   },
   "keywords": [
-    "state",
-    "machine",
-    "finite",
-    "state",
-    "machine",
-    "utility"
+    "Finate",
+    "State",
+    "Machine",
+    "State",
+    "Machine",
+    "Utility"
   ],
   "author": "Feifei Hang <l.daniel.hung@gmail.com> (http://feifeihang.github.io/)",
   "license": "MIT",
