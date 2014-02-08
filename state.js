@@ -1,5 +1,3 @@
-#!/usr/local/bin/node
-
 function State(args) {
     'use strict';
     this.states = args.states || [];
